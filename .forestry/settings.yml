@@ -5,32 +5,28 @@ admin_path: ''
 webhook_url: 
 sections:
 - type: heading
-  label: Content
-- type: jekyll-posts
-  label: Posts
-  create: all
-  templates:
-  - post
+  label: New Kingston F.A.R.M
 - type: jekyll-pages
-  label: Pages
+  label: FoOD
   create: all
   templates:
+  - default
   - landing-page
   - page
-- type: directory
-  path: _people
-  label: People
+- type: jekyll-posts
+  label: ArT
   create: all
-  match: "*"
+  match: "**/*"
   templates:
-  - person
-- type: directory
-  path: _projects
-  label: Projects
-  create: all
-  match: "*"
-  templates:
-  - project
+  - default
+- type: document
+  path: roots
+  label: RoOTS
+  match: "**/*"
+- type: document
+  path: music
+  label: MuSIC
+  match: "**/*"
 - type: document
   path: _data/information.yml
   label: Contact Information
